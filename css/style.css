@@ -1,0 +1,371 @@
+
+        * {
+
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+
+
+        }
+
+        body {
+          overflow-x: hidden;
+        }
+
+
+        header {
+            height: 12vh;
+            background-color: black;
+            position: sticky;
+            top: 0px;
+            box-shadow: 2px 2px 2px rgb(0, 0, 33);
+
+          display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 99;
+            
+        }
+
+        header .btns {
+          width: 14vw;
+          height: 8vh;
+          /* background-color: yellow; */
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        header .btns:hover {
+       box-shadow: 2px 2px 2px blue;
+       border-radius: 100px;
+          transition: 0.8s;
+        }
+       
+
+        
+
+         header:hover {
+          box-shadow: 2px 2px 2px blue;
+          transition: 1s;
+         }
+
+        #searchBox {
+            padding: 10px 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            outline: none;
+
+        }
+        #searchBtn {
+            padding: 10px 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border: 1px solid white;
+        font-weight: bolder;
+        
+
+        }
+
+        #searchBox:hover {
+          box-shadow: inset 2px 2px 2px blue , 2px 2px 2px blue;
+          transition: 0.8s;
+        }
+
+        #searchBtn:hover {
+          background-color: transparent;
+          color: white;
+          box-shadow: inset 2px 2px 2px blue , 2px 2px 2px blue;
+          transition: 0.8s;
+
+        }
+
+
+
+        main {
+
+            min-height: 800PX;
+            background-color: black;
+            
+        
+
+        }
+        main .side {
+            width: 15vw;
+            height: 80vh;
+            background-color: rgb(24, 24, 24);
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 2vw;
+            flex-direction: column;
+            
+        }
+
+        main .side ul {
+            height: 20vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            margin-left:-7vw ;
+        }
+        main .side ul li {
+            color: white;
+            list-style: none;
+        }
+      main .side ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        font-size: 14px;
+      }
+
+      main .side .player {
+        background-color: rgb(43, 43, 43);
+        height: 35vh;
+        width: 10vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        box-shadow: 10px 10px 10px black;
+       padding: 1vh 1vw;
+
+      }
+      
+      main .side .player .range input {
+        background-color: white;
+        height: 2px;
+      }
+
+      main .side .player .image img {
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 9vw;
+      }
+
+      main .side .player .details{
+        height: 5vh;
+        /* background-color: yellow; */
+        width: 8vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+      }
+
+      main .side .player .details h3 , p {
+       color: white;
+      }
+
+      main .side .player .details h3 {
+        font-size: 8px;
+      }
+      main .side .player .details p {
+        font-size: 5px;
+      }
+        
+      main .side .player .btns {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        height: 5vh;
+        width: 8vw;
+      }
+
+      main .container {
+        margin-left: 14vw;
+        /* background-color: yellow; */
+        min-height: 85vh;
+        width: 75vw;
+        padding: 5vh 5vw;
+        
+        
+       
+      }
+
+
+      main .container .box {
+        background-color: rgb(19, 19, 19);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 28vh;
+        width: 11vw;
+        flex-direction: column;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
+      }
+      main .container .box h1 {
+        color: white;
+        font-weight: bolder;
+        font-size: 10px;
+      }
+
+      main .container .box img {
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        width: 8vw;
+
+
+      }
+
+      main .container .box:hover {
+        background-color: rgb(43, 43, 43);
+        transition: 0.5s;
+        box-shadow: 2px 2px 5px purple;
+
+      }
+
+      .popular_container {
+        height: 30vh;
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+        footer {
+            background-color: rgb(37, 37, 37);
+            height: 8vh;
+            
+         
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+            footer p {
+                color: white;
+            }
+
+
+            .shadow {
+              animation:myshadow infinite 3s linear;
+            }
+
+            @keyframes myshadow {
+              0%{
+                box-shadow:0px 2px 142px blue;
+              }
+              25%{
+                box-shadow: 0px 12px 142px yellow;
+              }
+              50%{
+                box-shadow:0px 2px 142px white;
+              }
+              75%{
+                box-shadow: 0px 12px 142px blue;
+              }
+              100%{
+                box-shadow:0px 2px 142px purple;
+              }
+            }
+
+    
+
+         /* Responsive code */
+
+         @media screen and (max-width: 500px) {
+       
+         header {
+          height: 6vh;
+         }
+         header a img {
+          width: 90px;
+         }
+
+
+          header .btns , .search_container {
+            display: none;
+          }
+
+          main .side {
+            background: transparent;
+            margin-left: 18vw;
+          }
+          main .side ul {
+            display:none;
+          }
+
+          main .side .player {
+            width: 25vw;
+            height: 25vh;
+          }
+
+          main .side .player .image img {
+            width: 100px;
+          }
+
+          main .side .player .range input {
+            width:20vw ;
+          }
+
+          main .side .player .details{
+            /* background-color: #fff; */
+            width: 20vw;
+          }
+
+          main .side .player .details h3 {
+            font-size: 10px;
+          }
+
+          main .side .player .btns {
+            width: 20vw;
+          }
+
+          main .container {
+            width: 60vw;
+            height: 1600px;
+            /* background-color: yellow; */
+          }
+
+          main .container section h2 {
+            display: none;
+          }
+
+          main .container section .popular_container {
+            width: 50vw;
+            height: 60vh;
+            
+          }
+
+          main .container section .popular_container .box {
+            width: 20vw;
+            height: 17vh;
+            margin: 2vh 2vw;
+            
+        
+          }
+
+          main .container section .popular_container .box img {
+            width: 15vw;
+           
+          }
+
+          
+          main .container section .popular_container .box h1 {
+            font-size: 8px;
+            letter-spacing: 0.1px;
+           
+          }
+
+          footer {
+            height: 5vh;
+          }
+        }

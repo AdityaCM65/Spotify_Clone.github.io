@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone : By Aditya C Mahajan</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header >
+
+    <a href="index.html"><div class="logo"><img src="images/logo.png" alt="Spotify_Logo_Pic" width="150px"></div></a>
+    <div class="search_container"><input type="text" id="searchBox" placeholder="Enter Song Name..."><button id="searchBtn">Search</button></div>
+    <div class="btns">
+        <a href="https://www.linkedin.com/in/adityacm65"  target="_blank"> <img src="images/linkLogo.png" class="imgl" alt="linkLogo" width="52px"></a>
+        <a href="https://twitter.com/AdityaCM65"  target="_blank"> <img src="images/twitterLogo.png" class="imgh" alt="twitterLogo" width="35px"></a>
+        <a href="https://www.instagram.com/aditya_cm_65/"  target="_blank"><img src="images/instaLogo.png" class="imgh" alt="instaLogo" width="35px"></a></div>
+
+   
+</header>
+ <main>
+
+<div class="side">
+<ul>
+    <li> <a href="index.html" > Home </a></li>
+    <li> <a href="index.html"> About </a></li>
+    <li> <a href="index.html"> Contact </a></li>
+</ul>
+
+
+<div class="player">
+
+    <div class="image"><img src="images/song_banner.jpg" alt="banner" width="150px"></div>
+    <div class="range"><input type="range" name="range" id="range" min="0" value="0" max="100" ></div>
+    <div class="details"><h3 id="songName">Deva Deva</h3> 
+                         <p id="songArtist">Arijit Singh</p></div>
+    <div class="btns"><img src="images/previous_button.png" style="background-color: white; border-radius: 50%;" id="prevBtn" width="25px" alt="prevbtnpic">
+                      <img src="images/play_button.png" style="background-color: white; border-radius: 50%;" id="playBtn"  width="25px" alt="playBtnpic">
+                      <img src="images/next_button.png" style="background-color: white; border-radius: 50%;" id="nextBtn"  width="25px" alt="nextBtnpic"></div>
+
+</div>
+
+
+</div>
+
+<div class="container">
+
+<section class="popular">
+    <h2 style="color:white; margin:20px; ">Popular Songs</h2>
+    <div class="popular_container">
+    <div class="box" id="0">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Deva Deva</h1>
+    </div>
+    <div class="box" id="1">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Tere Hawale</h1>
+    </div>
+    <div class="box" id="2">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Aashiqu Tera Tera</h1>
+    </div>
+
+    <div class="box" id="3">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Aashiqui Aa Gayi</h1>
+    </div>
+    <div class="box" id="4">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Akhiyaan Milavanga</h1>
+    </div>
+</div>
+</section>
+
+<section class="mood">
+    <h2 style="color:white; margin:20px; " >Mood Songs</h2>
+    <div class="popular_container">
+    <div class="box" id="5">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Lambiyaan Si </h1>
+    </div>
+    <div class="box" id="6">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Desh Mere</h1>
+    </div>
+    <div class="box" id="7">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Ishq Mubarak</h1>
+    </div>
+
+    <div class="box" id="8">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Meet</h1>
+    </div>
+    <div class="box" id="9">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Bekhayali</h1>
+    </div>
+</div>
+</section>
+
+<section class="latest">
+    <h2 style="color:white; margin:20px; " >Latest Songs</h2>
+    <div class="popular_container">
+    <div class="box" id="10">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Rait Jara Si</h1>
+    </div>
+    <div class="box" id="11">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Hum Mar Jaayenge</h1>
+    </div>
+    <div class="box" id="12">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Dholna</h1>
+    </div>
+
+    <div class="box" id="13">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Bandeya</h1>
+    </div>
+    <div class="box" id="14">
+        <img src="images/song_banner.jpg" alt="banner" width="150px">
+        <h1 class="songHeading">Channa Mereya</h1>
+    </div>
+</div>
+</section>
+    
+</div>
+
+ </main>
+ <footer><p>Copyright &copy; Aditya C Mahajan</p></footer>
+ <script src="js/script.js"></script>
+</body>
+</html>
